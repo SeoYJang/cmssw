@@ -11,17 +11,17 @@ hltMuonOfflineAnalyzer = DQMEDAnalyzer('HLTMuonOfflineAnalyzer',
 
     ## HLT paths passing any one of these regular expressions will be included
     hltPathsToCheck = cms.vstring(
-      "HLT_Mu8_TrkIsoVVL_v",
-      "HLT_Mu50_v",
+      "HLT_Mu8_TrkIsoVVL_v", # alive
+      "HLT_Mu50_v", # alive
       "HLT_Mu24_v",
-      "HLT_IsoMu24_v",
-      "HLT_IsoMu27_v",
-      "HLT_IsoMu20_v",
+      "HLT_IsoMu24_v", # alive
+      "HLT_IsoMu27_v", # alive
+      "HLT_IsoMu20_v", # alive
       "HLT_HIL3Mu12_v", #for HI
       "HLT_HIL3Mu15_v", #for HI
       "HLT_HIL3Mu20_v", #for HI
-      "HLT_CascadeMu100_v",
-      "HLT_HighPtTkMu100_v"
+      "HLT_CascadeMu100_v", # alive
+      "HLT_HighPtTkMu100_v" # alive
     ),
 
 #HLT_Mu15_eta2p1_TriCentral_40_20_20_BTagIP3D1stTrack_v3 matches HLT_Mu15_eta2p1_v
@@ -68,7 +68,7 @@ hltMuonOfflineAnalyzer = DQMEDAnalyzer('HLTMuonOfflineAnalyzer',
         pt = cms.untracked.vdouble(  0.0,   2.0,   4.0, 
                                      6.0,   8.0,  10.0, 
                                     20.0,  30.0,  40.0, 
-                                   100.0, 200.0, 400.0),
+                                   100.0, 200.0, 500.0),
     ),
 
     ## These parameters define which objects are used to fill plots
